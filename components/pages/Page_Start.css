@@ -1,0 +1,18 @@
+
+.AboutShop p {
+    padding: 0px 15px 10px;
+    text-align: justify;
+}
+.Page_Start h1, h2 {
+    text-align: center;
+    margin: 2% 0;
+    padding: 2%;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 3px brown;
+    background-color: lightgray;
+}
+.Page_Start img {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 3%;
+}

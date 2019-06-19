@@ -1,0 +1,20 @@
+.Footer {
+    display: flex;
+    background-color: darkslategrey;
+    color: white;
+}
+.Payment, .OurNetwork, .Contacts {
+    flex: 1;
+    text-align: center;
+}
+.Footer img {
+    margin: 1%;
+    border-radius: 10%;
+}
+.Footer h5 {
+    text-transform: uppercase;
+}
+.Footer p {
+    text-align: left;
+    color: yellow;
+}

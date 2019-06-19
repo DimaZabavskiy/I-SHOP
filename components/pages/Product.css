@@ -1,0 +1,43 @@
+.wrapper {
+    box-shadow: 1px 1px 7px grey;
+    margin: 3%;
+    padding: 3%;
+    display: flex;
+}
+.wrapper .productImage {
+    flex: 1;
+}
+
+.wrapper .productImage img {
+    width: 100%;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.wrapper .productDescription {
+    padding-left: 6%; 
+    flex: 3;
+}
+
+.Link {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 2px 2px 6px gray;
+    color: red;
+    text-decoration: none;
+}
+.productDescription span {
+    font-size: 25px;
+    font-weight: bold;
+}
+.productDescription button {
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    line-height: 30px;
+    color: red;
+    font-weight: bold;
+    background-color: bisque;
+    box-shadow: 0px 0px 8px gray;
+}

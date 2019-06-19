@@ -1,0 +1,132 @@
+.Page_Basket {
+    padding: 2%;
+}
+.Page_Basket h2 {    
+    text-align: center;
+    margin: 2% 0;
+    padding: 2%;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 3px brown;
+    background-color: lightgray;
+}
+.Page_Basket table {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 2%;
+}
+.Page_Basket th {
+    text-align: left;
+    padding: 1% 0;
+}
+.Math {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5% 5%;
+    margin-right: 1%; 
+    font-size: 25px;
+    background-color: black;
+    color: white;
+}
+.Page_Basket button {    
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    line-height: 30px;
+    padding: 0 2%;
+    color: red;
+    font-weight: bold;
+    background-color: bisque;
+    box-shadow: 0px 0px 8px gray;
+}
+.Total {
+    background-color: lightgray;
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 1%;
+    text-shadow: 1px 2px 3px brown;
+}
+.Delivery {
+    padding: 2% 0;
+    animation: adressAnimation 0.5s;
+}
+@keyframes adressAnimation {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 180px;
+    }
+}
+
+.ChosenProduct td {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Courier {
+    overflow: hidden;
+    animation: deliveryAnimation 0.5s;
+}
+
+@keyframes deliveryAnimation {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 30px;
+    }
+}
+.Contacts {
+    overflow: hidden;
+    animation: ContactsAnimation 0.5s;
+}
+
+@keyframes ContactsAnimation {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 175px;
+    }
+}
+.Ordered {
+    background-color: lightgray;
+}
+.Ordered div {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding: 2% 0;
+    text-transform: uppercase;
+    animation: OrderedAnimation 0.5s;
+}
+@keyframes OrderedAnimation {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 30px;
+    }
+}
+
+
+.Contacts input, textarea, .Courier input {    
+    line-height: 20px;
+    font-size: 18px;
+    font-style: italic;
+    background-color: azure;
+    font-weight: bold;
+    border: solid 1px black;
+    margin: 1% 0;
+}
+.Count {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+}
+.ButtonNext {
+    padding: 1%;
+    text-align: center;
+}

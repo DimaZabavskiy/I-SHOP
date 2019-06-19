@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.App {
+    width: 90%;
+    margin: auto;
+}
+.redSpan {
+    color: red;
+    font-style: italic;
+}
+.Route {
+    margin-top: 8%;
+}

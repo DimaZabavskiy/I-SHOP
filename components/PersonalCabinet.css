@@ -1,0 +1,58 @@
+.PersonalCabinet {
+    padding: 3%;
+    position: relative;
+}
+.PersonalCabinet .CabinetExit {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px gray;
+    padding: 1%;
+}
+.PersonalCabinet h1 {
+    margin: 0;
+    display: inline;
+    font-size: 25px;
+}
+.personalProduct {
+    padding: 2% 0 0 0;
+}
+.personalProduct img {
+    border: 1px solid black;
+    margin-right: 1%;
+}
+.Registration {
+    padding: 5%;
+    font-size: 25px;
+}
+.Registration input {
+    margin: 2%;
+    line-height: 30px;
+    font-size: 25px;
+    font-style: italic;
+    background-color: azure;
+    font-weight: bold;
+    border: solid 1px black;
+}
+.Registration .Alternative {
+    display: inline-block;
+    padding: 1%;
+    color: blue;
+    font-style: italic;
+    cursor: pointer;
+}
+.Registration button {
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    line-height: 30px;
+    padding: 0 2%;
+    color: red;
+    font-weight: bold;
+    background-color: bisque;
+    box-shadow: 0px 0px 8px gray;
+}

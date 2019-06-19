@@ -1,0 +1,54 @@
+.Products {
+    display: flex;
+    margin-bottom: 3%;
+}
+.ProductsList {
+    flex: 4;
+    padding-left: 10px;
+    background-color: lightgrey;
+    margin: 2% 0 0 0;
+}
+.Category {
+    margin: 2% 2% 0 0;
+    padding: 10px;
+    flex: 1;
+    background-color: lightgrey;
+}
+.ProductsList .Search {
+    line-height: 30px;
+    font-size: 25px;
+    font-style: italic;
+    background-color: azure;
+    font-weight: bold;
+    border: solid 1px black;
+    margin: 3% 0;
+}
+.ProductsList span, .Category span {
+    font-size: 25px;
+    font-weight: bold;
+}
+.ProductsList .PriceArrow {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5% 1%;
+    margin-right: 1%; 
+    font-size: 25px;
+    background-color: black;
+    color: white;
+}
+.Category input, select {
+    line-height: 20px;
+    font-size: 18px;
+    font-style: italic;
+    background-color: azure;
+    font-weight: bold;
+    border: solid 1px black;
+    margin: 3% 0;
+}
+.Category label {
+    line-height: 20px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 1%;
+}
