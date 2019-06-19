@@ -89,7 +89,6 @@ class Page_Basket extends React.PureComponent {
         console.log(2);
         return (<div className='Page_Basket'><h2>Ваша корзина пуста</h2></div>)}
 
-      //return <div className='Page_Basket'><h2>Ваша корзина пуста</h2></div>
     }
 
     let prodName = '';

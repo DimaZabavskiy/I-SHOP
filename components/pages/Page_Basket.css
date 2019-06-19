@@ -81,6 +81,7 @@
 .Contacts {
     overflow: hidden;
     animation: ContactsAnimation 0.5s;
+    padding-bottom: 3%;
 }
 
 @keyframes ContactsAnimation {
@@ -93,6 +94,7 @@
 }
 .Ordered {
     background-color: lightgray;
+    margin-bottom: 3%;
 }
 .Ordered div {
     font-weight: bold;
