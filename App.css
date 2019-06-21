@@ -12,4 +12,10 @@ body {
 }
 .Route {
     margin-top: 8%;
+    min-height: 80vh;
 }
+@media all and (max-width: 900px) {
+    .App {
+        width: 98%;
+    }
+   }

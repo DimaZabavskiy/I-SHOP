@@ -24,7 +24,6 @@ const delete_from_basket = function(id) {
   }
 }
 const clear_basket = function() {
-  console.log('очистка корзины clear_basket ');
   return{
     type: CLEAR_BASKET,
   }

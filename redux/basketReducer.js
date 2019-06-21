@@ -59,7 +59,6 @@ function basketReducer(state=initState,action) {
       return newState;
     }
     case ADD_FROM_LOCALSTORAGE: {
-      console.log('сработал редьюсер добавления в корзину из локалсториджа');
       let newState = {...state};
       newState.chosenProduct = action.product;
       return newState;

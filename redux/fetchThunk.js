@@ -26,7 +26,6 @@ function productsThunkAC(dispatch) {
                     return response.json();
             })
             .then( (data) => {
-                console.log('done');
                 dispatch( productsSetAC(data) );
             })
             .catch( (error) => {

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
 import { productsThunkAC } from "../../redux/fetchThunk";
@@ -11,19 +10,8 @@ import './Products.css'
 
 class Products extends React.PureComponent {
 
-  /*static propTypes = {
-    name: PropTypes.string.isRequired,
-    clients:PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        fio: PropTypes.string.isRequired,
-        balance: PropTypes.number.isRequired,
-      })
-    ),
-  };*/
 
   state = {
-    //changedType: null,
     sortPrice: null, // сортировка по цене: 'min' - с наименьшей, 'max' - с наибольшей
     search: '',
     getBrand: [],
@@ -41,7 +29,6 @@ class Products extends React.PureComponent {
 
   search = (eo) => {
     this.setState({
-      //changedType: 'search',
       search: eo.target.value,
     })
   }

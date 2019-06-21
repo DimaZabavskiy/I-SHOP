@@ -23,9 +23,7 @@ class Category extends React.PureComponent {
     }
 
     setMaxPrice = (EO) => {
-       // if (EO.target.value) {
-            this.props.cbSetMaxPrice(EO.target.value);
-        //}
+        this.props.cbSetMaxPrice(EO.target.value);
     }
 
     render () {

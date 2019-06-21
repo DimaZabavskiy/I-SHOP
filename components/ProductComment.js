@@ -101,10 +101,6 @@ class ProductComment extends React.PureComponent {
 
 }
 
-
-//export default ProductComment;
-
-
 const mapStateToProps = function (state) {
     return {
       products: state.products,

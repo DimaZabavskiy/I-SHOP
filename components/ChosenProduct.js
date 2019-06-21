@@ -5,6 +5,10 @@ import './pages/Page_Basket.css'
 
 class ChosenProduct extends React.PureComponent {
 
+    state = {
+      delete: false,
+    }
+
     
     decCounter = () => {
         this.props.dispatch( counterButton_add(this.props.info.id,-1) );
@@ -13,15 +17,26 @@ class ChosenProduct extends React.PureComponent {
     incCounter = () => {
         this.props.dispatch( counterButton_add(this.props.info.id,1) );
     }
-    deleteProduct= () => {
+    deleteProductFromBasket = () => {
         this.props.dispatch( delete_from_basket (this.props.info.id) );
+    }
+
+    deleteProduct = () => {
+      this.setState({
+        delete: true,
+      })
+      setTimeout (this.deleteProductFromBasket, 1000);
     }
 
     render () {
       console.log('render ChosenProduct');
+      let tdClass;
+
+      this.state.delete ? ( tdClass = 'DeleteProduct' ) : ( tdClass = "ChosenProduct" );
+      
         return (
             
-            <tr key={this.props.info.id} className='ChosenProduct'>
+            <tr key={this.props.info.id} className={tdClass} >
               <td>{this.props.info.name}</td>
               <td>{this.props.info.cost}</td>
               <td>
@@ -42,7 +57,6 @@ class ChosenProduct extends React.PureComponent {
 
 const mapStateToProps = function (state) {
     return {
-      //products: state.products,
       basket: state.basket,
     };
   };

@@ -60,9 +60,17 @@
     }
 }
 
-.ChosenProduct td {
+.ChosenProduct {
     font-weight: bold;
     font-size: 20px;
+    opacity: 1.0;
+}
+.DeleteProduct {
+    font-weight: bold;
+    font-size: 20px;
+    color: red;
+    transition: 1s;
+    opacity: 0.0;
 }
 
 .Courier {
@@ -131,4 +139,37 @@
 .ButtonNext {
     padding: 1%;
     text-align: center;
+}
+
+@media all and (max-width: 768px) {
+    .Page_Basket {
+        padding: 0;
+    }
+    .ChosenProduct {
+        font-weight: normal;
+        font-size: 14px;
+        opacity: 1.0;
+    }
+    .ChosenProduct td {
+        max-width: 100px;
+        font-size: 14px;
+    }
+    .DeleteProduct td {
+        max-width: 100px;
+    }
+
+    .DeleteProduct {
+        font-weight: normal;
+        font-size: 14px;
+        color: red;
+        transition: 1s;
+        opacity: 0.0;
+    }
+    .Page_Basket button {    
+        text-transform: lowercase;
+        line-height: 20px;
+    }
+    .Math {
+        padding: 0.5% 5%;
+    }
 }

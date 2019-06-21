@@ -79,16 +79,12 @@ class Page_Basket extends React.PureComponent {
   render() {
     console.log('render Page_Basket');
     if (this.props.basket.chosenProduct.length == 0 && JSON.parse(localStorage.chosenProduct).length == 0) {
-      console.log(1);
       if (this.state.ordered) {
-        console.log(3);
         return (<div className='Ordered'>
         <div>Заказ успешно зарегистрирован!</div>
       </div>)
       } else {
-        console.log(2);
         return (<div className='Page_Basket'><h2>Ваша корзина пуста</h2></div>)}
-
     }
 
     let prodName = '';
@@ -110,7 +106,7 @@ class Page_Basket extends React.PureComponent {
           <tr>
             <th>Товар</th>
             <th>Цена</th>
-            <th>Количество</th>
+            <th>Сколько</th>
             <th></th>
           </tr>
           

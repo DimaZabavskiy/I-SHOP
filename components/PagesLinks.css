@@ -27,3 +27,58 @@
   width: 90%;
   margin: auto;
 }
+.BurgerMenu {
+  display: none;
+  position: absolute;
+  top: 3%;
+  right: 70%;
+  background-color: red;
+  border-radius: 50%;
+  padding: 1%;
+}
+.BurgerMenu img {
+  width: 30px;
+  height: 25px;
+}
+
+@media all and (max-width: 768px) {
+  .PageLink {
+    position: absolute;
+    left: -27%;
+    transition: 1s;
+    z-index: 10;
+  }
+  .PageLinkHidden {
+    display: block;
+    transition: 1s;
+    width: 50%;
+    padding: 20px 5px;
+    font-size: 25px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    z-index: 10;
+  }
+  .BurgerMenu {
+    transition: 1s;
+    display: block;
+    top: 3%;
+    right: 85%;
+    cursor: pointer;
+  }
+  .ShowMenu{
+    display: block;
+    position: absolute;
+    top: 3%;
+    background-color: white;
+    font-weight: bold;
+    color: red;
+    border: 2px solid black;
+    padding: 0 15px;
+    line-height: 40px;
+    transition: 1s;
+    border-radius: 50%;
+    right: 44%;
+    cursor: pointer;
+  }
+ }

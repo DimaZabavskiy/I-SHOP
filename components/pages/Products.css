@@ -52,3 +52,34 @@
     font-weight: bold;
     margin: 1%;
 }
+
+@media all and (max-width: 768px) {
+    .Products {
+        display: block;
+        margin-bottom: 3%;
+    }
+    .ProductsList {
+        padding-left: 0px;
+        background-color: lightgrey;
+        margin: 1% 0 0 0;
+    }
+    .Category {
+        margin: 2% 2% 0 0;
+        padding: 10px;
+        background-color: lightgrey;
+    }
+    .ProductsList .Search {
+        display: block;
+        line-height: 20px;
+        font-size: 18px;
+        font-style: italic;
+        background-color: azure;
+        font-weight: bold;
+        border: solid 1px black;
+        margin: 1% 0;
+    }
+    .ProductsList span {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}

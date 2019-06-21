@@ -1,39 +1,52 @@
 ﻿import React from 'react';
 import { NavLink } from 'react-router-dom'
-import {connect} from 'react-redux';
-import {add_from_logalstorage} from '../redux/basketAC';
+import BasketCount from './BasketCount';
 
 import './PagesLinks.css';
 
 
 class PagesLinks extends React.Component {
 
-  componentWillMount () {
-      if (this.props.basket.chosenProduct.length == 0 && JSON.parse(localStorage.chosenProduct).length > 0) {
-        this.props.dispatch(add_from_logalstorage (JSON.parse(localStorage.chosenProduct)) );
-      }
+  state = {
+    menu: false,
   }
+
+  showMenu = () => {
+    this.setState ({
+      menu: true,
+    })
+  } 
+  cancelMenu = () => {
+    this.setState ({
+      menu: false,
+    })
+  } 
           
   render() {
     console.log('render PagesLinks');
-    let count = 0;
-    if (this.props.basket.chosenProduct.length > 0) {
-        let product = [...this.props.basket.chosenProduct];
-        
-        for (let i = 0; i < product.length; i++) {
-            count += product[i].count;
-        }
-    }
+
+    let showMenu;
+
+    this.state.menu ? ( showMenu = 'PageLinkHidden' ) : ( showMenu = 'PageLink')
 
     return (
       <div className='Links'>
-        <NavLink to="/" exact className="PageLink" activeClassName="ActivePageLink">Главная</NavLink>
-        <NavLink to="/products" className="PageLink" activeClassName="ActivePageLink">Продукты</NavLink>
-        <NavLink to="/registration" className="PageLink" activeClassName="ActivePageLink">Личный кабинет</NavLink>
-        <NavLink to="/basket" className="PageLink" activeClassName="ActivePageLink">
+        <NavLink to="/" exact className={showMenu} activeClassName="ActivePageLink">Главная</NavLink>
+        <NavLink to="/products" className={showMenu} activeClassName="ActivePageLink">Продукты</NavLink>
+        <NavLink to="/registration" className={showMenu} activeClassName="ActivePageLink">Личный кабинет</NavLink>
+        <NavLink to="/basket" className={showMenu} activeClassName="ActivePageLink">
             Корзина
-            {this.props.basket.chosenProduct.length?<span className='BasketCount'>{count}</span>:null}
+           <BasketCount />
         </NavLink>
+        {this.state.menu ? 
+          <div className = "ShowMenu" onClick={this.cancelMenu}>
+            <div>X</div>
+          </div> :
+          <div className = 'BurgerMenu' onClick={this.showMenu} >
+            <img src='https://i.ibb.co/y48t3P1/iconfinder-menu-alt-134216.png' />
+          </div>
+        }
+        
       </div>
     );
     
@@ -41,10 +54,5 @@ class PagesLinks extends React.Component {
 
 }
     
-const mapStateToProps = function (state) {
-  return {
-    basket: state.basket,
-  };
-};
 
-export default connect(mapStateToProps)(PagesLinks);
+export default PagesLinks;

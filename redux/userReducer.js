@@ -26,7 +26,6 @@ function userReducer(state=initState,action) {
         return newState;
     }
     case EXIT_FROM_USER: {
-        console.log('выход из редьюсера пользователя');
         let newState={...state};
         newState.status = false;
         newState.user = action.userProd;

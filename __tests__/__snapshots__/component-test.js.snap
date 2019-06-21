@@ -1,9 +1,107 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`работа ExampleComponent 1`] = `
+exports[`работа компонента Contacts 1`] = `
 <div
-  className="SExampleComponent"
+  className="Contacts"
 >
-  Пример компонента
+  <span>
+    Контактная информация:
+  </span>
+  <br />
+  <input
+    onChange={[Function]}
+    placeholder="ФИО"
+    type="text"
+  />
+  <span
+    className="redSpan"
+  >
+    Заполнение поля обязательно!
+  </span>
+  <br />
+  <input
+    onChange={[Function]}
+    placeholder="email"
+    type="email"
+  />
+  <span
+    className="redSpan"
+  >
+    Заполнение поля обязательно!
+  </span>
+  <br />
+  <textarea
+    placeholder="Дополнительная информация"
+    type="text"
+  />
+  <br />
+  
+</div>
+`;
+
+exports[`работа компонента Contacts 2`] = `
+<div
+  className="Contacts"
+>
+  <span>
+    Контактная информация:
+  </span>
+  <br />
+  <input
+    onChange={[Function]}
+    placeholder="ФИО"
+    type="text"
+  />
+  <br />
+  <input
+    onChange={[Function]}
+    placeholder="email"
+    type="email"
+  />
+  <span
+    className="redSpan"
+  >
+    Заполнение поля обязательно!
+  </span>
+  <br />
+  <textarea
+    placeholder="Дополнительная информация"
+    type="text"
+  />
+  <br />
+  
+</div>
+`;
+
+exports[`работа компонента Contacts 3`] = `
+<div
+  className="Contacts"
+>
+  <span>
+    Контактная информация:
+  </span>
+  <br />
+  <input
+    onChange={[Function]}
+    placeholder="ФИО"
+    type="text"
+  />
+  <br />
+  <input
+    onChange={[Function]}
+    placeholder="email"
+    type="email"
+  />
+  <br />
+  <textarea
+    placeholder="Дополнительная информация"
+    type="text"
+  />
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Оформить заказ
+  </button>
 </div>
 `;

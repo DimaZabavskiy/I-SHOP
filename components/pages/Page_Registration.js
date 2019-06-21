@@ -8,7 +8,6 @@ class Page_Registration extends React.PureComponent {
 
   componentWillMount () {
     if (JSON.parse(localStorage.user).userName) {
-      console.log('надо в добавить юзера из локалсториджа');
       this.props.dispatch(add_user_from_localstorage ( JSON.parse(localStorage.user) ) );
     }
   }

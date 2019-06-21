@@ -7,13 +7,6 @@ import './ProductInfo.css';
 
 class ProductInfo extends React.PureComponent {
 
-  /*static propTypes = {
-    info:PropTypes.shape({
-      fio: PropTypes.string.isRequired,
-      balance: PropTypes.number.isRequired,
-    }),
-  };*/
-
   state = {
     setComment: false,
     mode: 'info', //если 'info', информация о продукте, если 'comment', комментарии о продукте

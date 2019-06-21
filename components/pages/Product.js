@@ -49,9 +49,7 @@ class Product extends React.PureComponent {
 }
 
 const mapStateToProps = function (state) {
-  return {
-    basket: state.basket,
-  };
+  return { };
 };
 
 export default connect(mapStateToProps)(Product);
